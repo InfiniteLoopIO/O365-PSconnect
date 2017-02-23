@@ -83,7 +83,7 @@ do {$global:O365cred = Get-Credential -Message "Enter O365 Admin Credentials"; i
 $sharepointPrefix = $global:O365cred.UserName -match "(?<=@)[\w]+" | % {$matches[0]} 
 
 # Create custom objects to be used for dynamic menu display
-# New menu objects should have contain Description, ImportString, and ConnectionString attributes
+# New menu objects should have Description, ImportString, and ConnectionString attributes
 $customMenuArr = @()
 
 # Microsoft Online 
